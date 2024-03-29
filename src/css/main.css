@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(8, 0, 78, 0.9) 8%,
+    rgba(80, 87, 208, 1) 100%
+  );
+
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 20px;
+  width: 500px;
+
+  background-color: rgba(8, 0, 78, 0.5);
+  border: solid 1px #fff;
+  border-radius: 10px;
+}
+
+/* CARDS */
+
+.cards {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.card {
+  display: block;
+  width: 60px;
+  height: 37px;
+  margin-right: 5px;
+
+  border: solid 1px #fff;
+  border-radius: 5px;
+}
+
+.card.disabled {
+  opacity: 0.3;
+}
+
+.card.visa {
+  background-image: url(../img/visa_icon.png);
+}
+
+.card.master {
+  background-image: url(../img/mastercard_icon.png);
+}
+
+.card.amex {
+  background-image: url(../img/american_express_icon.png);
+}
+
+.card.mir {
+  background-image: url(../img/mir_icon.png);
+}
+
+/* FORM */
+
+.form {
+  display: flex;
+}
+.form__input {
+  height: 50px;
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  background-color: #fff;
+  border: solid 1px rgb(88, 88, 88);
+  border-radius: 10px;
+}
+
+.btn {
+  height: 50px;
+  padding: 10px;
+
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  border: solid 1px rgb(88, 88, 88);
+  border-radius: 10px;
+
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.form__btn {
+  background-color: rgb(174, 238, 178);
+}
+
+.form__btn:hover {
+  background-color: rgba(148, 221, 233, 1);
+}
+
+.form__btn:active {
+  background-color: #fff;
+}
+
+/* VALIDATOR-RESULT */
+
+.validator-result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 10px;
+}
+
+.validator-result span {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.reset-btn {
+  background-color: rgb(255, 95, 95);
+  color: #fff;
+}
+
+.reset-btn:hover {
+  background-color: rgb(253, 24, 24);
+}
+
+.reset-btn:active {
+  background-color: #fff;
+  color: #000;
+}
